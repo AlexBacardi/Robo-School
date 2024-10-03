@@ -1,0 +1,15 @@
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1190px;
+}
+
+.container-lg {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1750px;
+}
+
+.container-right {
+    padding-left: calc((100% - 1190px) / 2 + 15px);
+}
