@@ -1,0 +1,25 @@
+.header {
+    padding-top: 30px;
+    background-color: #141024;
+    color: #fff;
+}
+
+.header__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.header__nav {}
+
+.header__tel {
+    position: relative;
+    font-weight: 600;
+    font-size: 30px;
+    text-decoration: none;
+    line-height: 1.6;
+    color: #fff;
+
+    @include animatedLink(#fff)
+}

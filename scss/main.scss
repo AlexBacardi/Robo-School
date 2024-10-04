@@ -6,3 +6,11 @@
 @import './base/typography';
 @import './base/utils';
 
+// header
+@import './sections/header';
+@import './blocks/logo';
+@import './blocks/nav';
+
+// promo
+@import './sections/promo';
+@import './blocks/btn';
