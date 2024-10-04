@@ -18,7 +18,14 @@
 }
 
 .perspectives__subtitle {
-
+    position: relative;
 }
+
+.perspectives__tooltip {
+    position: absolute;
+    top: 2px;
+    left: 112px;
+}
+
 
 .perspectives__descr {}

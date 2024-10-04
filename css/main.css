@@ -168,6 +168,12 @@ body {
   pointer-events: none;
 }
 
+.svg-tooltip {
+  width: 3px;
+  height: 13px;
+  fill: #141024;
+}
+
 .header {
   padding-top: 30px;
   background-color: #141024;
@@ -377,4 +383,49 @@ body {
 
 .perspectives__item {
   max-width: 360px;
+}
+
+.perspectives__subtitle {
+  position: relative;
+}
+
+.perspectives__tooltip {
+  position: absolute;
+  top: 2px;
+  left: 112px;
+}
+
+.tooltip {
+  position: relative;
+  cursor: pointer;
+}
+
+.tooltip__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: rgba(20, 16, 36, 0.08);
+}
+
+.tooltip__text {
+  width: 251px;
+  max-height: 56px;
+  padding: 15px 20px;
+  position: absolute;
+  top: -40px;
+  left: 0;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #141024;
+  border-radius: 5px;
+  transform: translate(0%, -50%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in;
+}
+.tooltip__text--visible {
+  opacity: 1;
 }/*# sourceMappingURL=main.css.map */

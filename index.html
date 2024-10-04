@@ -34,6 +34,7 @@
 </head>
 
 <body>
+    <!-- header -->
     <header class="header">
         <div class="container-lg">
             <div class="header__row">
@@ -59,6 +60,7 @@
     </header>
 
     <main class="main">
+        <!-- promo -->
         <section class="promo">
             <div class="container">
                 <div class="promo__row">
@@ -83,6 +85,7 @@
                 </div>
             </div>
         </section>
+        <!-- about -->
         <section class="about">
             <div class="container">
                 <h2 class="visually-hidden">О нас</h2>
@@ -125,6 +128,7 @@
                 </ul>
             </div>
         </section>
+        <!-- perspectives -->
         <section class="perspectives">
             <div class="container">
                 <div class="perspectives__title">
@@ -151,9 +155,24 @@
                         </p>
                     </li>
                     <li class="perspectives__item">
-                        <h3 class="perspectives__subtitle main-title main-title--xs">
-                            Практику <span class="perspectives__tooltip"></span>
-                        </h3>
+                        <div class="perspectives__subtitle">
+                            <h3 class="main-title main-title--xs">
+                                Практику 
+                            </h3>
+                            <span class="perspectives__tooltip">
+                                <!-- TODO: доделать tooltip -->
+                                <div class="tooltip" id="tooltip">
+                                    <span class="tooltip__btn" id="tooltipBtn">
+                                        <svg class="svg-tooltip">
+                                            <use href="./img/icons/sprite.svg#svg-tooltip"></use>
+                                        </svg>
+                                    </span>
+                                    <p class="tooltip__text" id="tooltipText">
+                                        При наличии свободных мест
+                                    </p>
+                                </div>
+                            </span>
+                        </div>
                         <p class="perspectives__descr descr descr--sm">
                             Возможность пройти практику по преподаванию робототехники на базе R:ED LAB (в оффлайн или онлайн формате)
                         </p>
@@ -162,6 +181,9 @@
             </div>
         </section>
     </main>
+
+    <!-- scripts -->
+    <script src="./js/mian.js"></script>
 </body>
 
 </html>

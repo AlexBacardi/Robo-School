@@ -5,6 +5,7 @@
 @import './base/container';
 @import './base/typography';
 @import './base/utils';
+@import './base/svg-icons';
 
 // header
 @import './sections/header';
@@ -21,3 +22,4 @@
 
 //perspectives
 @import './sections/perspectives';
+@import './blocks/tooltip';
