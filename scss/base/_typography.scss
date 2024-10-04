@@ -10,4 +10,17 @@
     &--small {
         font-size: 30px;
     }
+
+    &--xs {
+        font-size: 24px;
+    }
+}
+
+.descr {
+    font-size: 20px;
+    line-height: 1.6;
+
+    &--sm {
+        font-size: 18px;
+    }
 }
