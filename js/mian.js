@@ -42,7 +42,7 @@ $(document).ready(function () {
         if (w_top + 500 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
             $('.num').css('opacity', '1');
             $('.num').spincrement({
-                thousandSeparator: "",
+                thousandSeparator: " ",
                 duration: 2000
             });
 

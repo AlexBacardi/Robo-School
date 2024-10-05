@@ -1,0 +1,41 @@
+.package-card {
+    width: 360px;
+    height: 460px;
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 63px;
+
+    border: 1px solid rgba(20, 16, 36, 0.2);
+    border-radius: 20px;
+
+    transition: color 0.3s ease-in, background-color 0.3s ease-in, transform 0.3s ease-in;
+    
+}
+
+.package-card:hover {
+    color: #fff;
+    background-color: #141024;
+    transform: scale(1.1);
+}
+
+.package-card__header {}
+
+.package-card__body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.package-card__price {}
+
+.package-card__descr {
+    text-align: center;
+}
+
+.package-card__btn {
+    margin-top: auto;
+}
