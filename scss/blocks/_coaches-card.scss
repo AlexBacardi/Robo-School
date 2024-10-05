@@ -1,0 +1,29 @@
+.coaches-card {
+    max-width: 360px;
+}
+
+.coaches-card__img {
+    overflow: hidden;
+    margin-bottom: 20px;
+    background-color: #C4C4C4;
+    border-radius: 20px;
+
+    img {
+        object-fit: cover;
+        aspect-ratio: 36 / 50;
+    }
+}
+
+.coaches-card__body {}
+
+.coaches-card__title {
+    margin-bottom: 10px;
+}
+
+.coaches-card__descr {
+    margin-bottom: 20px;
+
+    p+p{
+        margin-top: 10px;
+    }
+}

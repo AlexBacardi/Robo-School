@@ -30,7 +30,7 @@
     }
 }
 
-@mixin animatedLink($color) {
+@mixin animatedHover($color) {
     &::after {
         content: '';
         position: absolute;

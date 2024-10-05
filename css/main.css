@@ -174,6 +174,18 @@ body {
   fill: #141024;
 }
 
+.svg-arrow-right,
+.svg-arrow-left {
+  width: 40px;
+  height: 40px;
+  fill: #141024;
+  transition: fill 0.3s ease-in;
+}
+.svg-arrow-right:hover,
+.svg-arrow-left:hover {
+  fill: #615592;
+}
+
 .header {
   padding-top: 30px;
   background-color: #141024;
@@ -337,6 +349,50 @@ body {
   color: #d52027;
 }
 
+.btn-coaches {
+  position: relative;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #d52027;
+}
+.btn-coaches::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #d52027;
+  transform: scale(0);
+  transform-origin: right;
+  transition: transform 0.4s ease-in;
+}
+.btn-coaches::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #d52027;
+  transform: scale(0);
+  transform-origin: left;
+  transition: transform 0.4s ease-in;
+}
+.btn-coaches:hover::after {
+  transform: scale(1);
+  transform-origin: left;
+}
+.btn-coaches:hover::before {
+  transform: scale(1);
+  transform-origin: right;
+}
+
+.btn-next, .btn-prev {
+  width: 40px;
+  height: 40px;
+}
+
 .about {
   padding: 120px 0;
 }
@@ -364,6 +420,9 @@ body {
 
 .about-item__title {
   color: #d52027;
+}
+.about-item__title .num {
+  opacity: 0;
 }
 
 .perspectives {
@@ -397,7 +456,6 @@ body {
 
 .tooltip {
   position: relative;
-  cursor: pointer;
 }
 
 .tooltip__btn {
@@ -408,6 +466,7 @@ body {
   height: 24px;
   border-radius: 50%;
   background-color: rgba(20, 16, 36, 0.08);
+  cursor: pointer;
 }
 
 .tooltip__text {
@@ -428,4 +487,68 @@ body {
 }
 .tooltip__text--visible {
   opacity: 1;
+}
+
+.coaches {
+  padding-top: 120px;
+}
+
+.coaches__title {
+  margin-bottom: 60px;
+}
+
+.coaches__content {
+  margin-bottom: 60px;
+}
+
+.coaches__slider-nav {
+  display: flex;
+  align-items: center;
+}
+
+.coaches__scrollbar {
+  width: 360px;
+  height: 5px;
+  border-radius: 40px;
+  background-color: rgba(20, 16, 36, 0.08);
+}
+
+.coaches__scrollbar-drag {
+  width: 260px;
+  border-radius: 40px;
+  background-color: #141024;
+}
+
+.coaches__nav {
+  margin-left: 690px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.coaches-card {
+  max-width: 360px;
+}
+
+.coaches-card__img {
+  overflow: hidden;
+  margin-bottom: 20px;
+  background-color: #C4C4C4;
+  border-radius: 20px;
+}
+.coaches-card__img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 36/50;
+}
+
+.coaches-card__title {
+  margin-bottom: 10px;
+}
+
+.coaches-card__descr {
+  margin-bottom: 20px;
+}
+.coaches-card__descr p + p {
+  margin-top: 10px;
 }/*# sourceMappingURL=main.css.map */

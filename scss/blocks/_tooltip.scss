@@ -1,6 +1,5 @@
 .tooltip {
     position: relative;
-    cursor: pointer;
 }
 
 .tooltip__btn {
@@ -11,6 +10,7 @@
     height: 24px;
     border-radius: 50%;
     background-color: rgba(20, 16, 36, 0.08);
+    cursor: pointer;
 }
 
 .tooltip__text {

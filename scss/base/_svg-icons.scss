@@ -3,3 +3,17 @@
     height: 13px;
     fill: #141024;
 }
+
+.svg-arrow-right,
+.svg-arrow-left {
+    width: 40px;
+    height: 40px;
+    fill: #141024;
+
+    transition: fill 0.3s ease-in;
+    
+
+    &:hover {
+        fill: #615592;
+    }
+}

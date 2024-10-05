@@ -21,3 +21,17 @@
         }
     }
 }
+
+.btn-coaches {
+    position: relative;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #d52027;
+
+    @include animatedHover(#d52027)
+}
+
+.btn-next, .btn-prev {
+    width: 40px;
+    height: 40px;
+}
