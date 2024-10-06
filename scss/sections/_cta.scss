@@ -1,0 +1,34 @@
+.cta {
+    padding: 87px 0;
+    background-color: #d52027;
+    background-image: url('./../../img/icons/percent.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+}
+
+.cta__row {
+    display: flex;
+    gap: 64px;
+}
+
+.cta__content {
+    width: 476px;
+    color: #fff;
+}
+
+.cta__title {
+    margin-bottom: 20px;
+    font-size: 36px;
+    line-height: 1.3;
+}
+
+.cta__descr {
+    p+p{
+        margin-top: 10px;
+    }
+}
+
+.cta__form {}
+
+

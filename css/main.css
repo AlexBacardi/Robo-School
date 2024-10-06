@@ -393,6 +393,19 @@ body {
   height: 40px;
 }
 
+.btn-cta {
+  height: 64px;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #141024;
+  transition: color 0.3s ease-in, background-color 0.3s ease-in;
+}
+.btn-cta:hover {
+  background-color: #fff;
+  color: #d52027;
+}
+
 .about {
   padding: 120px 0;
 }
@@ -599,4 +612,90 @@ body {
 
 .package-card__btn {
   margin-top: auto;
+}
+
+.cta {
+  padding: 87px 0;
+  background-color: #d52027;
+  background-image: url("./../../img/icons/percent.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+
+.cta__row {
+  display: flex;
+  gap: 64px;
+}
+
+.cta__content {
+  width: 476px;
+  color: #fff;
+}
+
+.cta__title {
+  margin-bottom: 20px;
+  font-size: 36px;
+  line-height: 1.3;
+}
+
+.cta__descr p + p {
+  margin-top: 10px;
+}
+
+.form {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form__input {
+  height: 64px;
+  padding: 19px 20px;
+  border-radius: 5px;
+  background-color: #f6f6f6;
+}
+.form__input::-moz-placeholder {
+  font-size: 18px;
+  color: rgba(40, 41, 68, 0.7);
+}
+.form__input::placeholder {
+  font-size: 18px;
+  color: rgba(40, 41, 68, 0.7);
+}
+
+.footer {
+  padding: 32px 0 40px;
+  background-color: #141024;
+  color: #fff;
+}
+
+.footer__row {
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footer__copy {
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer__tel {
+  margin-left: auto;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.6;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in;
+}
+.footer__tel:hover {
+  color: #d52027;
 }/*# sourceMappingURL=main.css.map */

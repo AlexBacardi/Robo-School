@@ -35,3 +35,19 @@
     width: 40px;
     height: 40px;
 }
+
+.btn-cta {
+    height: 64px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #141024;
+
+    transition: color 0.3s ease-in, background-color 0.3s ease-in;
+    
+
+    &:hover {
+        background-color: #fff;
+        color: #d52027;
+    }
+}
