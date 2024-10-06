@@ -1,5 +1,7 @@
 .about {
     padding: 120px 0;
+
+    @include scrollTopMargin;
 }
 
 .about__desrc {

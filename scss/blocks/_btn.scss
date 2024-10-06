@@ -24,11 +24,21 @@
 
 .btn-coaches {
     position: relative;
+    padding: 5px;
     font-size: 18px;
     line-height: 1.6;
     color: #d52027;
 
-    @include animatedHover(#d52027)
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+    
+
+    &:active {
+        background-color: #d52027;
+        color: #fff
+    }
+
+    @include animatedHover(#d52027);
+
 }
 
 .btn-next, .btn-prev {
@@ -48,6 +58,18 @@
 
     &:hover {
         background-color: #fff;
+        color: #d52027;
+    }
+}
+
+.btn-modal {
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgba(20, 16, 36, 0.7);
+
+    transition: color 0.3s ease-in;
+    
+    &:hover {
         color: #d52027;
     }
 }

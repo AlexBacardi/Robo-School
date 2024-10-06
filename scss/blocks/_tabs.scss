@@ -1,0 +1,64 @@
+.tabs {}
+
+.tabs__list {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 180px;
+
+    border-bottom: 1px solid rgba(20, 16, 36, 0.11);
+}
+
+.tabs__item {}
+
+.tabs__btn {
+    font-size: 20px;
+    line-height: 1.6;
+    color: rgba(20, 16, 36, 0.2);
+    text-decoration: none;
+    transition: color 0.2s ease-in;
+    
+
+    &:hover {
+        color: #141024;
+    }
+
+    &--active {
+        color: #d52027;
+    }
+}
+
+.tabs__content {
+    overflow-y: scroll;
+    max-height: 354px;
+}
+
+.tabs__content::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+.tabs__content::-webkit-scrollbar-thumb {
+    background-color: #141024;
+    border-radius: 40px;
+}
+
+.tabs__block {
+    display: none;
+
+    &--active {
+        display: block;
+    }
+}
+
+.tabs__descr {
+    margin-bottom: 40px;
+    p+p {
+        margin-top: 5px;
+    }
+}
+
+.tabs__title {
+    margin-bottom: 20px;
+}

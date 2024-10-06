@@ -1,5 +1,7 @@
 .coaches {
     padding-top: 120px;
+
+    @include scrollTopMargin;
 }
 
 .coaches__title {

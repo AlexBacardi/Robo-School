@@ -19,15 +19,7 @@
 }
 
 @mixin scrollTopMargin() {
-    scroll-margin-top: 60px;
-
-    @include tablet {
-        scroll-margin-top: 40px;
-    }
-
-    @include mobile {
-        scroll-margin-top: 30px;
-    }
+    scroll-margin-top: -100px;
 }
 
 @mixin animatedHover($color) {

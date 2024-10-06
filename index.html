@@ -45,13 +45,13 @@
                 <nav class="header__nav nav">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="#!" class="nav__link">О школе</a>
+                            <a href="#about" class="nav__link">О школе</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#!" class="nav__link">Тренеры</a>
+                            <a href="#coaches" class="nav__link">Тренеры</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#!" class="nav__link">Стоимость</a>
+                            <a href="#packeges" class="nav__link">Стоимость</a>
                         </li>
                     </ul>
                 </nav>
@@ -59,7 +59,7 @@
             </div>
         </div>
     </header>
-
+    <!-- main -->
     <main class="main">
         <!-- promo -->
         <section class="promo">
@@ -87,7 +87,7 @@
             </div>
         </section>
         <!-- about -->
-        <section class="about">
+        <section class="about" id="about">
             <div class="container">
                 <h2 class="visually-hidden">О нас</h2>
                 <div class="about__desrc">
@@ -181,7 +181,7 @@
             </div>
         </section>
         <!-- coaches -->
-        <section class="coaches">
+        <section class="coaches" id="coaches">
             <div class="container-right">
                 <div class="coaches__title">
                     <h2 class="main-title main-title--medium">Профессиональные тренеры</h2>
@@ -307,7 +307,7 @@
             </div>
         </section>
         <!-- package -->
-        <section class="packeges">
+        <section class="packeges" id="packeges">
             <div class="container">
                 <div class="packeges__title">
                     <h2 class="main-title main-title--medium">Выберите нужный пакет</h2>
@@ -373,6 +373,7 @@
             </div>
         </section>
     </main>
+    <!-- footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer__row">
@@ -388,6 +389,108 @@
             </div>
         </div>
     </footer>
+
+    <!-- modal -->
+     <section class="modal modal--open">
+        <h2 class="visually-hidden">Модальное окно</h2>
+        <div class="modal__body">
+            <!-- modal top -->
+            <div class="modal__top">
+                <div class="modal__img">
+                    <img src="./img/coaches/slide-1.jpg" srcset="./img/coaches/slide-1@2x.jpg 2x" alt="">
+                </div>
+                <div class="modal__content">
+                    <div class="modal__title">
+                        <h3 class="main-title main-title--xs">Ирина Лайм</h3>
+                    </div>
+                    <div class="modal__descr descr descr--sm">
+                        <p>
+                            преподаватель по робототехнике
+                        </p>
+                    </div>
+                    <div class="modal__social">
+                        <a href="#!" class="modal__link">
+                            <svg class="svg-facebook">
+                                <use href="./img/icons/sprite.svg#svg-facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="#!" class="modal__link">
+                            <svg class="svg-instagram">
+                                <use href="./img/icons/sprite.svg#svg-instagram"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="modal__btn">
+                    <button class="btn-modal">Закрыть</button>
+                </div>
+            </div>
+            <!-- tabs -->
+            <div class="modal__tabs tabs">
+                <ul class="tabs__list">
+                    <li class="tabs__item">
+                        <button class="tabs__btn tabs__btn--active" type="button" data-tab="#tab-1">
+                            Образование
+                        </button>
+                    </li>
+                    <li class="tabs__item">
+                        <button class="tabs__btn" type="button" data-tab="#tab-2">
+                            Опыт работы
+                        </button>
+                    </li>
+                    <li class="tabs__item">
+                        <button class="tabs__btn" type="button" data-tab="#tab-3">
+                            Награды
+                        </button>
+                    </li>
+                </ul>
+                <div class="tabs__content">
+                    <!--  tabs conten -->
+                    <div class="tabs__block tabs__block--active" id="tab-1">
+                        <div class="tabs__descr descr">
+                            <P>Сентябрь 1995 — Июнь 2000</P>
+                            <P>Санкт-Петербургский политехнический университет Петра Великого</P>
+                            <P>Факультет: Компьютерных наук и технологий</P>
+                            <P>Специальность: Математика и компьютерные науки</P>
+                            <P>Форма обучения: Очная</P>
+                        </div>
+                        <div class="tabs__descr descr">
+                            <h3 class="tabs__title main-title main-title--xs">
+                                Курсы и тренинги
+                            </h3>
+                            <p>Ноябрь 2020 — Февраль 2021</p>
+                            <p>Программа дополнительного образования «3D Моделирование»</p>
+                            <p>Место проведения: Институт дополнительного образования «Политех»</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eligendi assumenda quo voluptas minima? Officia debitis quibusdam nobis mollitia porro pariatur exercitationem, eum incidunt nesciunt. Quis libero consequuntur a voluptatibus necessitatibus dolorum assumenda quos officiis accusamus tempora illum sapiente unde, sunt dignissimos velit voluptas voluptate, quae vitae earum! Minus illum et distinctio inventore? Omnis perferendis nihil voluptate doloremque, mollitia iste animi totam laudantium ex eius placeat quae enim sequi reiciendis inventore commodi sunt expedita dolor voluptas, quidem nobis corporis? Sit ratione cum beatae iure alias ipsa similique rem esse impedit. Ullam voluptates nam nesciunt possimus fugiat quibusdam autem magni aut.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- tabs content -->
+                    <div class="tabs__block" id="tab-2">
+                        <div class="tabs__descr descr">
+                            <h3 class="tabs__title main-title main-title--xs">
+                                Опыт работы
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus aperiam error provident architecto, iste, odit tempora rem officiis at quasi perspiciatis cum repellat totam nulla quisquam, adipisci quibusdam unde iusto repudiandae ad dolor dolore? Perspiciatis et maxime consectetur numquam fugiat tenetur incidunt veniam, dolores totam aspernatur officia consequatur ad deleniti porro minima impedit rerum eveniet. Eligendi officia quam exercitationem et! Commodi nulla accusamus optio? Quidem at pariatur repellendus sed doloribus voluptate nemo maiores nobis cum officiis dolorum debitis eligendi odio ipsa, commodi, corporis incidunt error quod, atque totam sapiente laborum dicta a ducimus? Consequatur pariatur corrupti facere quae deleniti. Recusandae officia eum maiores minus assumenda labore, saepe unde voluptatibus totam facere nulla illum reprehenderit nemo numquam quod mollitia in quibusdam obcaecati aliquam. Inventore eos sed quo sapiente quos reiciendis unde pariatur illo quis ducimus quia quasi blanditiis praesentium recusandae animi nihil, quod corrupti cupiditate architecto. Aut, provident impedit. Consequuntur molestias totam assumenda cupiditate quas quibusdam vel pariatur quaerat aperiam quidem tempora dolorem id dolor nemo, eligendi minus ex nulla nostrum inventore, expedita atque accusantium eos excepturi! Voluptate asperiores assumenda blanditiis officiis rerum enim quos necessitatibus, voluptatum dolorem delectus porro a fugit accusantium ratione non, illum quasi tempora doloribus sint molestias.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- tabs content -->
+                    <div class="tabs__block" id="tab-3">
+                        <div class="tabs__descr descr">
+                            <h3 class="tabs__title main-title main-title--xs">
+                                Награды
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus recusandae quo earum deserunt maxime omnis cupiditate. Nam vel, cum est doloremque rerum molestias quibusdam unde aliquam quae, reiciendis ad! Facere necessitatibus incidunt atque est dolorem accusantium corrupti mollitia repellendus ullam! Autem numquam eaque saepe nemo, soluta molestiae quia ab ad ut reprehenderit corporis incidunt nostrum doloremque, illo ratione. Fuga architecto ut in, nobis similique vero ex tenetur doloribus molestiae fugiat cupiditate exercitationem eius nemo quod facilis laborum, ullam laudantium perferendis! Doloremque amet debitis dolor. Officia quibusdam suscipit error quidem vitae nesciunt beatae, similique optio dolorum blanditiis, maxime cum a cumque deserunt nihil aut quisquam, ullam sequi. Incidunt cupiditate expedita, harum impedit iusto earum? Doloremque et, ipsa, quibusdam quidem animi ratione quae voluptas magni quisquam aut aliquam. In repellendus facilis fugit voluptas, mollitia quisquam maiores molestiae laudantium dolore porro fugiat recusandae ipsa suscipit aut veritatis deleniti. Enim dolore rem provident ea nostrum mollitia, eum, ipsum molestiae recusandae accusantium labore iste quibusdam incidunt repellendus. Aperiam, eius culpa optio possimus facilis sunt, voluptas quis ipsam, quia fuga quod. Animi, eum veniam. Et saepe voluptatum corporis quae ipsam ullam, quisquam debitis consequuntur labore incidunt natus cum praesentium laudantium reprehenderit iste eligendi qui, neque totam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
 
     <!-- vendor -->
     <script src="./libs/jquery/jquery-3.7.1.min.js"></script>

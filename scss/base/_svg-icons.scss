@@ -17,3 +17,17 @@
         fill: #615592;
     }
 }
+
+.svg-facebook,
+.svg-instagram {
+    width: 30px;
+    height: 30px;
+    fill: #141024;
+
+    transition: fill 0.3s ease-in;
+    
+
+    &:hover {
+        fill: #d52027;
+    }
+}
