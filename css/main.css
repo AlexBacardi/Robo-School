@@ -815,31 +815,33 @@ body {
 .tabs__btn--active {
   color: #d52027;
 }
-
-.tabs__content {
-  overflow-y: scroll;
-  max-height: 354px;
-}
-
-.tabs__content::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
-}
-
-.tabs__content::-webkit-scrollbar-thumb {
-  background-color: #141024;
-  border-radius: 40px;
+.tabs__btn--active:hover {
+  color: #d52027;
 }
 
 .tabs__block {
+  max-height: 354px;
+  overflow-y: auto;
   display: none;
 }
 .tabs__block--active {
   display: block;
 }
 
+.tabs__block::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  padding-left: 3px;
+}
+
+.tabs__block::-webkit-scrollbar-thumb {
+  background-color: #141024;
+  border-radius: 40px;
+}
+
 .tabs__descr {
   margin-bottom: 40px;
+  padding-right: 7px;
 }
 .tabs__descr p + p {
   margin-top: 5px;
