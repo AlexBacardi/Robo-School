@@ -56,11 +56,18 @@
                     </ul>
                 </nav>
                 <a href="tel:78000001122" class="header__tel">+7 800 000 11 22</a>
+                <div class="header__mobile-btns">
+                    <a href="tel:78000001122" class="btn-mobile">
+                        <svg class="svg-call">
+                            <use href="./img/icons/sprite.svg#svg-call"></use>
+                        </svg>
+                    </a>
+                </div>
             </div>
         </div>
     </header>
     <!-- main -->
-    <main class="main">
+    <main class="main none">
         <!-- promo -->
         <section class="promo">
             <div class="container">
@@ -87,7 +94,7 @@
             </div>
         </section>
         <!-- about -->
-        <section class="about" id="about">
+        <section class="about none" id="about">
             <div class="container">
                 <h2 class="visually-hidden">О нас</h2>
                 <div class="about__desrc">
@@ -130,7 +137,7 @@
             </div>
         </section>
         <!-- perspectives -->
-        <section class="perspectives">
+        <section class="perspectives none">
             <div class="container">
                 <div class="perspectives__title">
                     <h2 class="main-title main-title--medium">
@@ -181,7 +188,7 @@
             </div>
         </section>
         <!-- coaches -->
-        <section class="coaches" id="coaches">
+        <section class="coaches none" id="coaches">
             <div class="container-right">
                 <div class="coaches__title">
                     <h2 class="main-title main-title--medium">Профессиональные тренеры</h2>
@@ -204,7 +211,7 @@
                                                 преподаватель по робототехнике
                                             </p>
                                         </div>
-                                        <button class="btn-coaches" type="button">Подробнее</button>
+                                        <button class="btn-coaches" type="button" data-id="#modal-1">Подробнее</button>
                                     </div>
                                 </article>
                             </div>
@@ -223,7 +230,7 @@
                                                 преподаватель по робототехнике
                                             </p>
                                         </div>
-                                        <button class="btn-coaches" type="button">Подробнее</button>
+                                        <button class="btn-coaches" type="button" data-id="#modal-2">Подробнее</button>
                                     </div>
                                 </article>
                             </div>
@@ -242,7 +249,7 @@
                                                 преподаватель по программированию
                                             </p>
                                         </div>
-                                        <button class="btn-coaches" type="button">Подробнее</button>
+                                        <button class="btn-coaches" type="button" data-id="#modal-3">Подробнее</button>
                                     </div>
                                 </article>
                             </div>
@@ -261,7 +268,7 @@
                                                 преподаватель по робототехнике
                                             </p>
                                         </div>
-                                        <button class="btn-coaches" type="button">Подробнее</button>
+                                        <button class="btn-coaches" type="button" data-id="#modal-4">Подробнее</button>
                                     </div>
                                 </article>
                             </div>
@@ -280,7 +287,7 @@
                                                 преподаватель по программированию
                                             </p>
                                         </div>
-                                        <button class="btn-coaches" type="button">Подробнее</button>
+                                        <button class="btn-coaches" type="button" data-id="#modal-5">Подробнее</button>
                                     </div>
                                 </article>
                             </div>
@@ -307,7 +314,7 @@
             </div>
         </section>
         <!-- package -->
-        <section class="packeges" id="packeges">
+        <section class="packeges none" id="packeges">
             <div class="container">
                 <div class="packeges__title">
                     <h2 class="main-title main-title--medium">Выберите нужный пакет</h2>
@@ -350,7 +357,7 @@
             </div>
         </section>
         <!-- cta -->
-        <section class="cta">
+        <section class="cta none">
             <div class="container">
                 <div class="cta__row">
                     <div class="cta__content">
@@ -374,7 +381,7 @@
         </section>
     </main>
     <!-- footer -->
-    <footer class="footer">
+    <footer class="footer none">
         <div class="container">
             <div class="footer__row">
                 <div class="footer__content">
@@ -391,7 +398,7 @@
     </footer>
 
     <!-- modal -->
-    <section class="modal">
+    <section class="modal" id="modal-1">
         <h2 class="visually-hidden">Модальное окно</h2>
         <div class="modal__body">
             <!-- modal top -->
@@ -422,31 +429,31 @@
                     </div>
                 </div>
                 <div class="modal__btn">
-                    <button class="btn-modal">Закрыть</button>
+                    <button class="btn-modal" data-control="closeModal">Закрыть</button>
                 </div>
             </div>
             <!-- tabs -->
-            <div class="modal__tabs tabs">
-                <ul class="tabs__list">
+            <div class="modal__tabs tabs" data-control="tab">
+                <ul class="tabs__list" data-control="tab-nav">
                     <li class="tabs__item">
-                        <button class="tabs__btn tabs__btn--active" type="button" data-tab="#tab-1">
+                        <button class="tabs__btn tabs__btn--active" type="button" data-control="tab-btn">
                             Образование
                         </button>
                     </li>
                     <li class="tabs__item">
-                        <button class="tabs__btn" type="button" data-tab="#tab-2">
+                        <button class="tabs__btn" type="button" data-control="tab-btn">
                             Опыт работы
                         </button>
                     </li>
                     <li class="tabs__item">
-                        <button class="tabs__btn" type="button" data-tab="#tab-3">
+                        <button class="tabs__btn" type="button" data-control="tab-btn">
                             Награды
                         </button>
                     </li>
                 </ul>
                 <div class="tabs__content">
                     <!--  tabs conten -->
-                    <div class="tabs__block tabs__block--active" id="tab-1">
+                    <div class="tabs__block tabs__block--active" data-control="tab-block">
                         <div class="tabs__descr descr">
                             <P>Сентябрь 1995 — Июнь 2000</P>
                             <P>Санкт-Петербургский политехнический университет Петра Великого</P>
@@ -466,7 +473,7 @@
                         </div>
                     </div>
                     <!-- tabs content -->
-                    <div class="tabs__block" id="tab-2">
+                    <div class="tabs__block" data-control="tab-block">
                         <div class="tabs__descr descr">
                             <h3 class="tabs__title main-title main-title--xs">
                                 Опыт работы
@@ -477,7 +484,7 @@
                         </div>
                     </div>
                     <!-- tabs content -->
-                    <div class="tabs__block" id="tab-3">
+                    <div class="tabs__block" data-control="tab-block">
                         <div class="tabs__descr descr">
                             <h3 class="tabs__title main-title main-title--xs">
                                 Награды
@@ -491,7 +498,7 @@
             </div>
         </div>
     </section>
-    <section class="modal">
+    <section class="modal" id="modal-2">
         <h2 class="visually-hidden">Модальное окно</h2>
         <div class="modal__body">
             <!-- modal top -->
@@ -522,31 +529,31 @@
                     </div>
                 </div>
                 <div class="modal__btn">
-                    <button class="btn-modal">Закрыть</button>
+                    <button class="btn-modal" data-control="closeModal">Закрыть</button>
                 </div>
             </div>
             <!-- tabs -->
-            <div class="modal__tabs tabs">
-                <ul class="tabs__list">
+            <div class="modal__tabs tabs" data-control="tab">
+                <ul class="tabs__list" data-control="tab-nav">
                     <li class="tabs__item">
-                        <button class="tabs__btn tabs__btn--active" type="button" data-tab="#tab-1">
+                        <button class="tabs__btn tabs__btn--active" type="button" data-control="tab-btn">
                             Образование
                         </button>
                     </li>
                     <li class="tabs__item">
-                        <button class="tabs__btn" type="button" data-tab="#tab-2">
+                        <button class="tabs__btn" type="button" data-control="tab-btn">
                             Опыт работы
                         </button>
                     </li>
                     <li class="tabs__item">
-                        <button class="tabs__btn" type="button" data-tab="#tab-3">
+                        <button class="tabs__btn" type="button" data-control="tab-btn">
                             Награды
                         </button>
                     </li>
                 </ul>
                 <div class="tabs__content">
                     <!--  tabs conten -->
-                    <div class="tabs__block tabs__block--active" id="tab-1">
+                    <div class="tabs__block tabs__block--active" data-control="tab-block">
                         <div class="tabs__descr descr">
                             <P>Сентябрь 1995 — Июнь 2000</P>
                             <P>Санкт-Петербургский политехнический университет Петра Великого</P>
@@ -566,7 +573,7 @@
                         </div>
                     </div>
                     <!-- tabs content -->
-                    <div class="tabs__block" id="tab-2">
+                    <div class="tabs__block" data-control="tab-block">
                         <div class="tabs__descr descr">
                             <h3 class="tabs__title main-title main-title--xs">
                                 Опыт работы
@@ -577,7 +584,7 @@
                         </div>
                     </div>
                     <!-- tabs content -->
-                    <div class="tabs__block" id="tab-3">
+                    <div class="tabs__block" data-control="tab-block">
                         <div class="tabs__descr descr">
                             <h3 class="tabs__title main-title main-title--xs">
                                 Награды
@@ -591,7 +598,7 @@
             </div>
         </div>
     </section>
-    <section class="modal">
+    <section class="modal" id="modal-3">
         <h2 class="visually-hidden">Модальное окно</h2>
         <div class="modal__body">
             <!-- modal top -->
@@ -622,31 +629,31 @@
                     </div>
                 </div>
                 <div class="modal__btn">
-                    <button class="btn-modal">Закрыть</button>
+                    <button class="btn-modal" data-control="closeModal">Закрыть</button>
                 </div>
             </div>
             <!-- tabs -->
-            <div class="modal__tabs tabs">
-                <ul class="tabs__list">
+            <div class="modal__tabs tabs" data-control="tab">
+                <ul class="tabs__list" data-control="tab-nav">
                     <li class="tabs__item">
-                        <button class="tabs__btn tabs__btn--active" type="button" data-tab="#tab-1">
+                        <button class="tabs__btn tabs__btn--active" type="button" data-control="tab-btn">
                             Образование
                         </button>
                     </li>
                     <li class="tabs__item">
-                        <button class="tabs__btn" type="button" data-tab="#tab-2">
+                        <button class="tabs__btn" type="button" data-control="tab-btn">
                             Опыт работы
                         </button>
                     </li>
                     <li class="tabs__item">
-                        <button class="tabs__btn" type="button" data-tab="#tab-3">
+                        <button class="tabs__btn" type="button" data-control="tab-btn">
                             Награды
                         </button>
                     </li>
                 </ul>
                 <div class="tabs__content">
                     <!--  tabs conten -->
-                    <div class="tabs__block tabs__block--active" id="tab-1">
+                    <div class="tabs__block tabs__block--active" data-control="tab-block">
                         <div class="tabs__descr descr">
                             <P>Сентябрь 1995 — Июнь 2000</P>
                             <P>Санкт-Петербургский политехнический университет Петра Великого</P>
@@ -666,7 +673,7 @@
                         </div>
                     </div>
                     <!-- tabs content -->
-                    <div class="tabs__block" id="tab-2">
+                    <div class="tabs__block" data-control="tab-block">
                         <div class="tabs__descr descr">
                             <h3 class="tabs__title main-title main-title--xs">
                                 Опыт работы
@@ -677,7 +684,7 @@
                         </div>
                     </div>
                     <!-- tabs content -->
-                    <div class="tabs__block" id="tab-3">
+                    <div class="tabs__block" data-control="tab-block">
                         <div class="tabs__descr descr">
                             <h3 class="tabs__title main-title main-title--xs">
                                 Награды
@@ -691,7 +698,7 @@
             </div>
         </div>
     </section>
-    <section class="modal">
+    <section class="modal" id="modal-4">
         <h2 class="visually-hidden">Модальное окно</h2>
         <div class="modal__body">
             <!-- modal top -->
@@ -722,31 +729,31 @@
                     </div>
                 </div>
                 <div class="modal__btn">
-                    <button class="btn-modal">Закрыть</button>
+                    <button class="btn-modal" data-control="closeModal">Закрыть</button>
                 </div>
             </div>
             <!-- tabs -->
-            <div class="modal__tabs tabs">
-                <ul class="tabs__list">
+            <div class="modal__tabs tabs" data-control="tab">
+                <ul class="tabs__list" data-control="tab-nav">
                     <li class="tabs__item">
-                        <button class="tabs__btn tabs__btn--active" type="button" data-tab="#tab-1">
+                        <button class="tabs__btn tabs__btn--active" type="button" data-control="tab-btn">
                             Образование
                         </button>
                     </li>
                     <li class="tabs__item">
-                        <button class="tabs__btn" type="button" data-tab="#tab-2">
+                        <button class="tabs__btn" type="button" data-control="tab-btn">
                             Опыт работы
                         </button>
                     </li>
                     <li class="tabs__item">
-                        <button class="tabs__btn" type="button" data-tab="#tab-3">
+                        <button class="tabs__btn" type="button" data-control="tab-btn">
                             Награды
                         </button>
                     </li>
                 </ul>
                 <div class="tabs__content">
                     <!--  tabs conten -->
-                    <div class="tabs__block tabs__block--active" id="tab-1">
+                    <div class="tabs__block tabs__block--active" data-control="tab-block">
                         <div class="tabs__descr descr">
                             <P>Сентябрь 1995 — Июнь 2000</P>
                             <P>Санкт-Петербургский политехнический университет Петра Великого</P>
@@ -766,7 +773,7 @@
                         </div>
                     </div>
                     <!-- tabs content -->
-                    <div class="tabs__block" id="tab-2">
+                    <div class="tabs__block" data-control="tab-block">
                         <div class="tabs__descr descr">
                             <h3 class="tabs__title main-title main-title--xs">
                                 Опыт работы
@@ -777,7 +784,7 @@
                         </div>
                     </div>
                     <!-- tabs content -->
-                    <div class="tabs__block" id="tab-3">
+                    <div class="tabs__block" data-control="tab-block">
                         <div class="tabs__descr descr">
                             <h3 class="tabs__title main-title main-title--xs">
                                 Награды
@@ -791,7 +798,7 @@
             </div>
         </div>
     </section>
-    <section class="modal">
+    <section class="modal" id="modal-5">
         <h2 class="visually-hidden">Модальное окно</h2>
         <div class="modal__body">
             <!-- modal top -->
@@ -822,31 +829,31 @@
                     </div>
                 </div>
                 <div class="modal__btn">
-                    <button class="btn-modal">Закрыть</button>
+                    <button class="btn-modal" data-control="closeModal">Закрыть</button>
                 </div>
             </div>
             <!-- tabs -->
-            <div class="modal__tabs tabs">
-                <ul class="tabs__list">
+            <div class="modal__tabs tabs" data-control="tab">
+                <ul class="tabs__list" data-control="tab-nav">
                     <li class="tabs__item">
-                        <button class="tabs__btn tabs__btn--active" type="button" data-tab="#tab-1">
+                        <button class="tabs__btn tabs__btn--active" type="button" data-control="tab-btn">
                             Образование
                         </button>
                     </li>
                     <li class="tabs__item">
-                        <button class="tabs__btn" type="button" data-tab="#tab-2">
+                        <button class="tabs__btn" type="button" data-control="tab-btn">
                             Опыт работы
                         </button>
                     </li>
                     <li class="tabs__item">
-                        <button class="tabs__btn" type="button" data-tab="#tab-3">
+                        <button class="tabs__btn" type="button" data-control="tab-btn">
                             Награды
                         </button>
                     </li>
                 </ul>
                 <div class="tabs__content">
                     <!--  tabs conten -->
-                    <div class="tabs__block tabs__block--active" id="tab-1">
+                    <div class="tabs__block tabs__block--active" data-control="tab-block">
                         <div class="tabs__descr descr">
                             <P>Сентябрь 1995 — Июнь 2000</P>
                             <P>Санкт-Петербургский политехнический университет Петра Великого</P>
@@ -866,7 +873,7 @@
                         </div>
                     </div>
                     <!-- tabs content -->
-                    <div class="tabs__block" id="tab-2">
+                    <div class="tabs__block" data-control="tab-block">
                         <div class="tabs__descr descr">
                             <h3 class="tabs__title main-title main-title--xs">
                                 Опыт работы
@@ -877,7 +884,7 @@
                         </div>
                     </div>
                     <!-- tabs content -->
-                    <div class="tabs__block" id="tab-3">
+                    <div class="tabs__block" data-control="tab-block">
                         <div class="tabs__descr descr">
                             <h3 class="tabs__title main-title main-title--xs">
                                 Награды

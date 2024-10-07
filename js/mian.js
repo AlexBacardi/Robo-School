@@ -1,5 +1,3 @@
-"Use strict"
-
 $(document).ready(function () {
     // tooltop
     const tooltipBtn = document.querySelector('#tooltipBtn');
@@ -16,9 +14,7 @@ $(document).ready(function () {
 
     //slider
     const swiper = new Swiper('.swiper', {
-        slidesPerView: 3.9,
         loop: true,
-        spaceBetween: 40,
         speed: 400,
         scrollbar: {
             el: ".coaches__scrollbar",
@@ -26,6 +22,20 @@ $(document).ready(function () {
         navigation: {
             nextEl: ".btn-next",
             prevEl: ".btn-prev",
+        },
+        breakpoints: {
+            767: {
+                slidesPerView:2.9,
+                spaceBetween: 30,
+            },
+            1024: {
+                slidesPerView: 2.9,
+                spaceBetween: 20,
+            },
+            1281: {
+                slidesPerView:3.9,
+                spaceBetween: 40,
+            }
         }
     });
 
@@ -51,23 +61,70 @@ $(document).ready(function () {
     });
 
     //tabs
-    const tabBtns = document.querySelectorAll('.tabs .tabs__btn');
 
-    const tabsContent = document.querySelectorAll('.tabs__content .tabs__block');
+    const tabs = document.querySelectorAll('[data-control="tab"]');
 
-    tabBtns.forEach(function (elem) {
-        elem.addEventListener('click', function () {
-            tabBtns.forEach(function (elem) {
-                elem.classList.remove('tabs__btn--active');
+    tabs.forEach(function (tab) {
+
+        const tabBtns = tab.querySelectorAll('[data-control="tab-btn"]');
+
+        const tabBlocks = tab.querySelectorAll('[data-control="tab-block"]');
+
+        tabBtns.forEach(function (btn, index) {
+
+            btn.addEventListener('click', function (event) {
+
+                const currentBtn = btn;
+
+                const contentBlocks = tab.querySelectorAll('[data-control="tab-block"]');
+
+                const currentBlock = contentBlocks[index];
+
+                if (!currentBtn.classList.contains('tabs__btn--active')) {
+
+                    tabBtns.forEach(function (btn) {
+                        btn.classList.remove('tabs__btn--active');
+                    });
+    
+                    tabBlocks.forEach(function (block) {
+                        block.classList.remove('tabs__block--active');
+                    });
+    
+                    currentBtn.classList.add('tabs__btn--active');
+    
+                    currentBlock.classList.add('tabs__block--active');
+                }
+
             });
-            tabsContent.forEach(function (item) {
-                item.classList.remove('tabs__block--active');
-            });
-            elem.classList.add('tabs__btn--active');
-            const tabIdSelector = this.getAttribute('data-tab');
-            const currentTabBlock = document.querySelector(tabIdSelector);
-            currentTabBlock.classList.add('tabs__block--active');
-        })
+        });
     });
+
+    // modal
+    const openModalBtns = document.querySelectorAll('.coaches-card .btn-coaches');
+
+    const closeModalBtns = document.querySelectorAll('[ data-control="closeModal"]');
+    
+    function openModal() {
+
+        document.querySelector(this.getAttribute('data-id')).classList.add('modal--open');
+
+        document.body.classList.add('no-scroll');
+    };
+
+    openModalBtns.forEach(function (btn) {
+        
+        btn.addEventListener('click', openModal);
+    });
+
+    closeModalBtns.forEach(function (btn) {
+
+        btn.addEventListener('click',  function (event) {
+
+            event.target.closest('.modal--open').classList.remove('modal--open');
+
+            document.body.classList.remove('no-scroll');
+        });
+    }); 
+
 });
 

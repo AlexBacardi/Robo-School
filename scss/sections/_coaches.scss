@@ -2,6 +2,10 @@
     padding-top: 120px;
 
     @include scrollTopMargin;
+
+    @include notebook {
+        padding-top: 60px;
+    }
 }
 
 .coaches__title {
@@ -23,6 +27,7 @@
     height: 5px;
     border-radius: 40px;
     background-color: rgba(20, 16, 36, 0.08);
+
 }
 
 .coaches__scrollbar-drag {
@@ -36,4 +41,8 @@
     display: flex;
     align-items: center;
     gap: 10px;
+
+    @include notebook {
+        margin-left: auto;
+    }
 }

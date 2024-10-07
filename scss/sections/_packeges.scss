@@ -1,13 +1,28 @@
 .packeges {
     padding: 120px 0 140px;
+
+    @include notebook {
+        padding-top: 60px;
+        padding-bottom: 70px;
+    }
 }
 
 .packeges__title {
     margin-bottom: 80px;
+
+    @include notebook {
+        margin-bottom: 60px;
+    }
 }
 
 .packeges__row {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include notebook {
+        justify-content: flex-start;
+        gap: 20px;
+    }
 }

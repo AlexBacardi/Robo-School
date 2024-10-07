@@ -2,6 +2,22 @@
     margin: 0 auto;
     padding: 0 15px;
     max-width: 1190px;
+
+    @include notebook {
+        max-width: 1024px;
+    }
+
+    @include tablet {
+        max-width: 768px;
+    }
+
+    @include mobile {
+        max-width: 540px;
+    }
+
+    @include mobileXS {
+        max-width: 320px;
+    }
 }
 
 .container-lg {
@@ -12,4 +28,10 @@
 
 .container-right {
     padding-left: calc((100% - 1190px) / 2 + 15px);
+
+    @include notebook {
+        padding: 0 15px;
+        max-width: 1024px;
+        margin: 0 auto;
+    }
 }

@@ -1,24 +1,49 @@
 .perspectives {
     padding: 100px 0;
     background-color: #f9f9f9;
+
+    @include notebook {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 }
 
 .perspectives__title {
     margin-bottom: 60px;
+
+    @include notebook {
+        margin-bottom: 40px;
+    }
 }
 
 .perspectives__list {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include notebook {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 .perspectives__item {
     max-width: 360px;
+
+    @include notebook {
+        max-width: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .perspectives__subtitle {
     position: relative;
+
+    @include notebook {
+        margin-bottom: 15px;
+    }
 }
 
 .perspectives__tooltip {

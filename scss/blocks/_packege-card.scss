@@ -12,6 +12,10 @@
     border-radius: 20px;
 
     transition: color 0.3s ease-in, background-color 0.3s ease-in, transform 0.3s ease-in;
+
+    @include notebook {
+        width: 486px;
+    }
     
 }
 
