@@ -6,6 +6,11 @@
         padding-top: 50px;
         padding-bottom: 50px;
     }
+
+    @include mobileXS {
+        padding-top: 40px;
+        padding-bottom: 52px;
+    }
 }
 
 .perspectives__title {
@@ -13,6 +18,11 @@
 
     @include notebook {
         margin-bottom: 40px;
+    }
+
+    @include mobileXS {
+        margin-bottom: 40px;
+        text-align: center;
     }
 }
 
@@ -23,7 +33,11 @@
 
     @include notebook {
         flex-direction: column;
-        gap: 20px;
+        gap: 30px;
+    }
+
+    @include mobileXS {
+        text-align: center;
     }
 }
 
@@ -32,6 +46,7 @@
 
     @include notebook {
         max-width: unset;
+        width: 80%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -44,12 +59,20 @@
     @include notebook {
         margin-bottom: 15px;
     }
+
+    @include mobileXS {
+        margin-top: 10px;
+    }
 }
 
 .perspectives__tooltip {
     position: absolute;
     top: 2px;
     left: 112px;
+
+    @include mobileXS {
+        left: 94px;
+    }
 }
 
 

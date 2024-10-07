@@ -6,10 +6,19 @@
     @include notebook {
         padding-top: 60px;
     }
+
+    @include mobileXS {
+        padding-bottom: 60px;
+    }
 }
 
 .coaches__title {
     margin-bottom: 60px;
+
+    @include mobileXS {
+        margin-bottom: 40px;
+        text-align: center;
+    }
 }
 
 .coaches__content {
@@ -28,6 +37,10 @@
     border-radius: 40px;
     background-color: rgba(20, 16, 36, 0.08);
 
+    @include mobileXS {
+        width: 100%;
+    }
+
 }
 
 .coaches__scrollbar-drag {
@@ -44,5 +57,9 @@
 
     @include notebook {
         margin-left: auto;
+    }
+
+    @include mobileXS {
+        display: none;
     }
 }

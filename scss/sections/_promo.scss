@@ -8,7 +8,12 @@
     }
 
     @include mobile {
-        padding-top: 30px;
+        padding-top: 45px;
+    }
+
+    @include mobileXS {
+        padding-top: 37px;
+        padding-bottom: 40px;
     }
 }
 
@@ -73,7 +78,7 @@
 .promo__action {
     @include mobileXS {
         position: absolute;
-        bottom: 0;
+        bottom: 0px;
         left: 0;
         width: 100%;
     }

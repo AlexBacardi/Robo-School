@@ -24,17 +24,29 @@ $(document).ready(function () {
             prevEl: ".btn-prev",
         },
         breakpoints: {
+            320: {
+                slidesPerView: 1.2,
+                spaceBetween: 20,
+            },
+            539: {
+                slidesPerView: 1.5,
+                spaceBetween: 10,
+            },
             767: {
-                slidesPerView:2.9,
+                slidesPerView:2.3,
                 spaceBetween: 30,
             },
+            970: {
+                slidesPerView: 2.7,
+                spaceBetween: 20,
+            },
             1024: {
-                slidesPerView: 2.9,
+                slidesPerView: 3,
                 spaceBetween: 20,
             },
             1281: {
                 slidesPerView:3.9,
-                spaceBetween: 40,
+                spaceBetween: 30,
             }
         }
     });

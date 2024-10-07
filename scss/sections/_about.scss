@@ -4,8 +4,13 @@
     @include scrollTopMargin;
 
     @include notebook {
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    @include mobileXS {
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 }
 
@@ -14,6 +19,18 @@
     max-width: 891px;
     font-size: 30px;
     line-height: 1.6;
+
+    @include mobile {
+        font-size: 28px;
+    }
+
+    @include mobileXS {
+        margin-bottom: 40px;
+        max-width: unset;
+        width: 100%;
+        font-size: 20px;
+        text-wrap: balance;
+    }
 }
 
 .about__text-bold {
@@ -25,6 +42,15 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @include tablet {
+        align-items: flex-start;
+    }
+
+    @include mobile {
+        justify-content: center;
+        gap: 30px;
+    }
 }
 
 .adout__item {
@@ -35,6 +61,15 @@
         width: 50%;
         text-align: center;
     }
+
+    @include mobile {
+        width: 80%;
+    }
+
+    @include mobileXS {
+        width: 260px;
+    }
+
 }
 
 
