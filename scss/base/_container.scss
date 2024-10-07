@@ -24,6 +24,11 @@
     margin: 0 auto;
     padding: 0 15px;
     max-width: 1750px;
+
+    @include mobileXS {
+        max-width: unset;
+        width: 100%;
+    }
 }
 
 .container-right {
