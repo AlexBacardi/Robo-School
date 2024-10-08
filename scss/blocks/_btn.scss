@@ -73,6 +73,10 @@
         background-color: #fff;
         color: #d52027;
     }
+
+    @include mobileXS {
+        font-size: 16px;
+    }
 }
 
 .btn-modal {
