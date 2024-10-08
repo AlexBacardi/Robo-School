@@ -31,11 +31,32 @@
     max-height: 768px;
     background-color: #fff;
     border-radius: 20px;
+
+    @include tablet {
+        width: 768px;
+        height: 650px;
+    }
+
+    @include mobile {
+        width: 730px;
+    }
+
+    @include mobileXS {
+        width: calc(100% - 15px);
+        height: 489px;
+        padding: 33px 20px 30px;
+        border-radius: 10px;
+    }
 }
 
 .modal__top {
     display: flex;
     margin-bottom: 40px;
+
+    @include mobileXS {
+        margin-bottom: 20px;
+        align-items: flex-start;
+    }
 
 }
 
@@ -47,7 +68,14 @@
 
     img {
         object-fit: cover;
-        aspect-ratio: 16 / 22;
+        aspect-ratio: auto;
+    }
+
+    @include mobileXS {
+        border-radius: 5px;
+        width: 60px;
+        height: 83px;
+        flex-shrink: 0;
     }
 }
 
@@ -56,11 +84,29 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+
+    @include mobileXS {
+        margin-left: 10px;
+        gap: 0;
+    }
 }
 
-.modal__title {}
+.modal__title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.6;
 
-.modal__descr {}
+    @include mobileXS {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+}
+
+.modal__descr {
+    @include mobileXS {
+        margin-bottom: 10px;
+    }
+}
 
 .modal__social {
     display: flex;
@@ -69,11 +115,25 @@
     line-height: 1;
 }
 
-.modal__link {
-}
+.modal__link {}
 
 .modal__btn {
     margin-left: auto;
+
+    @include mobileXS {
+        display: none;
+    }
+}
+
+.modal__btn-mobile {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    @include mobileXS {
+        display: block;
+    }
 }
 
 .modal__tabs {}

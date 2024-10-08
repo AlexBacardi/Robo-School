@@ -80,6 +80,7 @@
 }
 
 .btn-modal {
+    position: relative;
     font-size: 18px;
     line-height: 1.6;
     color: rgba(20, 16, 36, 0.7);
@@ -89,7 +90,39 @@
     &:hover {
         color: #d52027;
     }
+
+    &--mobile {
+        width: 20px;
+        height: 20px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 20px;
+            height: 2px;
+            border-radius: 3px;
+            background-color: #141024;
+            transform: rotate(45deg);
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 20px;
+            height: 2px;
+            border-radius: 3px;
+            background-color: #141024;
+            transform: rotate(130deg);
+        }
+    }
+
 }
+
+
 
 .btn-mobile {
     position: relative;

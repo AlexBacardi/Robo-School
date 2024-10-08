@@ -5,12 +5,24 @@
     margin-bottom: 20px;
     display: flex;
     align-items: center;
-    gap: 180px;
-
     border-bottom: 1px solid rgba(20, 16, 36, 0.11);
+
+    @include mobileXS {
+        display: none;
+    }
+
 }
 
-.tabs__item {}
+.tabs__item {
+     &:last-child {
+        margin-right: auto;
+     }
+}
+
+.tabs__item + .tabs__item {
+    margin-left: auto;
+
+}
 
 .tabs__btn {
     font-size: 20px;
@@ -33,6 +45,14 @@
     }
 }
 
+.tabs__select {
+    display: none;
+
+    @include mobileXS {
+        display: block;
+    }
+}
+
 .tabs__content {}
 
 
@@ -43,6 +63,10 @@
 
     &--active {
         display: block;
+    }
+
+    @include tablet {
+        max-height: 254px;
     }
 }
 

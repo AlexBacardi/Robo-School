@@ -1,0 +1,21 @@
+.tabs__select {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 46px;
+
+    text-align: center;
+    appearance: none;
+
+    line-height: 1.6;
+    background-color: #D52027;
+    background-image: url('./../../img/icons/arrow-down.svg');
+    background-repeat: no-repeat;
+    background-position: calc(50% + 65px) center;
+    color: #fff;
+
+}
+
+.select-tabs {}
+
+.select-tabs__option {}

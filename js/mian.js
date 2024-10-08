@@ -80,11 +80,13 @@ $(document).ready(function () {
 
         const tabBtns = tab.querySelectorAll('[data-control="tab-btn"]');
 
+        const tabSelects = tab.querySelectorAll('[data-control="tab-select"]');
+
         const tabBlocks = tab.querySelectorAll('[data-control="tab-block"]');
 
         tabBtns.forEach(function (btn, index) {
 
-            btn.addEventListener('click', function (event) {
+            btn.addEventListener('click', function () {
 
                 const currentBtn = btn;
 
@@ -107,6 +109,22 @@ $(document).ready(function () {
                     currentBlock.classList.add('tabs__block--active');
                 }
 
+            });
+        });
+
+        tabSelects.forEach(function(select) {
+            
+            select.addEventListener('change', function () {
+
+                const contentBlocks = tab.querySelectorAll('[data-control="tab-block"]');
+
+                const currentBlock = contentBlocks[this.value];
+
+                tabBlocks.forEach(function (block) {
+                    block.classList.remove('tabs__block--active');
+                });
+
+                currentBlock.classList.add('tabs__block--active');
             });
         });
     });
