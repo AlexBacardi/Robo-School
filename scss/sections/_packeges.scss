@@ -13,6 +13,15 @@
     @include notebook {
         margin-bottom: 60px;
     }
+
+    @include mobile {
+        text-align: center;
+        text-wrap: balance;
+    }
+
+    @include mobileXS {
+        margin-bottom: 40px;
+    }
 }
 
 .packeges__row {
@@ -24,5 +33,14 @@
     @include notebook {
         justify-content: flex-start;
         gap: 20px;
+    }
+
+    @include tablet {
+        justify-content: space-between;
+        row-gap: 30px;
+    }
+
+    @include mobile {
+        justify-content: center;
     }
 }

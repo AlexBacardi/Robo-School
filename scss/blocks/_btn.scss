@@ -13,19 +13,25 @@
 
     transition: background-color .3s ease-in, color .3s ease-in;
 
+    @include mobileXS {
+        font-style: 16px;
+    }
+
     &--promo {
         &:hover {
             background-color: #fff;
             border-color: #d52027;
             color: #d52027;
         }
+
+        @include mobileXS {
+            width: 100%;
+            font-size: 16px;
+            text-align: center;
+        }
     }
 
-    @include mobileXS {
-        width: 100%;
-        font-size: 16px;
-        text-align: center;
-    }
+
 }
 
 .btn-coaches {

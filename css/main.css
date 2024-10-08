@@ -172,6 +172,11 @@ body {
 .main-title--medium {
   font-size: 50px;
 }
+@media (max-width: 1023px) {
+  .main-title--medium {
+    font-size: 45px;
+  }
+}
 @media (max-width: 767px) {
   .main-title--medium {
     font-size: 35px;
@@ -539,13 +544,18 @@ body {
   background-color: #d52027;
   transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
+@media (max-width: 539px) {
+  .btn-action {
+    font-style: 16px;
+  }
+}
 .btn-action--promo:hover {
   background-color: #fff;
   border-color: #d52027;
   color: #d52027;
 }
 @media (max-width: 539px) {
-  .btn-action {
+  .btn-action--promo {
     width: 100%;
     font-size: 16px;
     text-align: center;
@@ -989,6 +999,17 @@ body {
     margin-bottom: 60px;
   }
 }
+@media (max-width: 767px) {
+  .packeges__title {
+    text-align: center;
+    text-wrap: balance;
+  }
+}
+@media (max-width: 539px) {
+  .packeges__title {
+    margin-bottom: 40px;
+  }
+}
 
 .packeges__row {
   display: flex;
@@ -1000,6 +1021,17 @@ body {
   .packeges__row {
     justify-content: flex-start;
     gap: 20px;
+  }
+}
+@media (max-width: 1023px) {
+  .packeges__row {
+    justify-content: space-between;
+    row-gap: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .packeges__row {
+    justify-content: center;
   }
 }
 
@@ -1020,11 +1052,31 @@ body {
     width: 486px;
   }
 }
+@media (max-width: 1023px) {
+  .package-card {
+    width: 359px;
+  }
+}
+@media (max-width: 539px) {
+  .package-card {
+    width: 100%;
+    height: 394px;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 0px;
+  }
+}
 
 .package-card:hover {
   color: #fff;
   background-color: #141024;
   transform: scale(1.1);
+}
+
+@media (max-width: 539px) {
+  .package-card__header {
+    margin-bottom: auto;
+  }
 }
 
 .package-card__body {
@@ -1033,6 +1085,11 @@ body {
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 539px) {
+  .package-card__body {
+    flex-grow: 0;
+  }
+}
 
 .package-card__descr {
   text-align: center;
@@ -1040,6 +1097,11 @@ body {
 
 .package-card__btn {
   margin-top: auto;
+}
+@media (max-width: 539px) {
+  .package-card__btn {
+    margin-top: 40px;
+  }
 }
 
 .cta {
