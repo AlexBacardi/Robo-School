@@ -35,6 +35,10 @@
 
 @mixin scrollTopMargin() {
     scroll-margin-top: -100px;
+
+    @include tablet {
+        scroll-margin-top: -20px;
+    }
 }
 
 @mixin animatedHover($color) {
