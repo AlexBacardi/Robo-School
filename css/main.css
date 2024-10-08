@@ -1103,6 +1103,8 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   aspect-ratio: 36/50;
+  width: 100%;
+  height: 100%;
 }
 
 .coaches-card__title {
