@@ -100,7 +100,6 @@ html {
 
 body {
   font-family: "Jost", system-ui;
-  font-optical-sizing: auto;
   font-size: 16px;
   line-height: normal;
 }
@@ -639,7 +638,7 @@ body {
 }
 @media (max-width: 539px) {
   .btn-action {
-    font-style: 16px;
+    font-size: 16px;
   }
 }
 .btn-action--promo:hover {

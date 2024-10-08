@@ -14,7 +14,7 @@
     transition: background-color .3s ease-in, color .3s ease-in;
 
     @include mobileXS {
-        font-style: 16px;
+        font-size: 16px;
     }
 
     &--promo {
