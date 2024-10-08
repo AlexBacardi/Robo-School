@@ -188,5 +188,9 @@ $(document).ready(function () {
     mobileBtnOpen.addEventListener('click', openMenu);
 
     mobileBtnClose.addEventListener('click', closeMenu);
+
+    // masked phone
+
+    $("#phone").mask("+7(999) 999-9999");
 });
 
