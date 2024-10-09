@@ -1657,7 +1657,7 @@ body {
           appearance: none;
   line-height: 1.6;
   background-color: #D52027;
-  background-image: url("./../../img/icons/arrow-down.svg");
+  background-image: url("./../img/icons/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: calc(50% + 65px) center;
   color: #fff;
