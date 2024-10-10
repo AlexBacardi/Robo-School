@@ -281,6 +281,12 @@ body {
   fill: #141024;
 }
 
+.svg-arrow-top {
+  width: 18px;
+  height: 20px;
+  fill: #fff;
+}
+
 .header {
   padding: 30px 0;
   background-color: #141024;
@@ -788,6 +794,34 @@ body {
 .btn-burger span:last-child {
   width: 13px;
   align-self: flex-start;
+}
+
+.btn-top {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  z-index: 22;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 17px 9px;
+  border-radius: 10px;
+  background-color: rgba(97, 85, 146, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease-in;
+}
+.btn-top--visible {
+  opacity: 1;
+  pointer-events: all;
+}
+@media (max-width: 539px) {
+  .btn-top {
+    right: 20px;
+    bottom: 20px;
+  }
 }
 
 .about {

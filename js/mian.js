@@ -192,5 +192,21 @@ $(document).ready(function () {
     // masked phone
 
     $("#phone").mask("+7(999) 999-9999");
+
+    //btn-top
+
+    const scrollBtn = document.querySelector('#btn-top');
+
+    window.addEventListener('scroll', function () {
+
+        if (window.pageYOffset > window.innerHeight) {
+
+            scrollBtn.classList.add('btn-top--visible');
+
+        } else {
+
+            scrollBtn.classList.remove('btn-top--visible');
+        }
+    });
 });
 
