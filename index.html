@@ -57,16 +57,20 @@
                 </nav>
                 <a href="tel:78000001122" class="header__tel" aria-label="Позвонить нам">+7 800 000 11 22</a>
                 <div class="header__mobile-btns">
-                    <a href="tel:78000001122" class="btn-mobile" aria-label="Позвонить нам">
-                        <svg class="svg-call">
-                            <use href="./img/icons/sprite.svg#svg-call"></use>
-                        </svg>
-                    </a>
-                    <button class="btn-burger" type="button" id="openMobileNav" aria-label="Открыть мобильное меню">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
+                    <div class="btn-wrapper">
+                        <a href="tel:78000001122" class="btn-mobile" aria-label="Позвонить нам">
+                            <svg class="svg-call">
+                                <use href="./img/icons/sprite.svg#svg-call"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="btn-wrapper">
+                        <button class="btn-burger" type="button" id="openMobileNav" aria-label="Открыть мобильное меню">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -77,8 +81,12 @@
             Мобильная навигация
         </h2>
         <div class="mobile-nav__header">
-            <button class="mobile-nav__btn" id="closeMobileNav" aria-label="Закрыть мобильное меню">
-            </button>
+            <div class="mobile-nav__wrapper">
+                <button class="mobile-nav__btn" id="closeMobileNav" aria-label="Закрыть мобильное меню">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
         <div class="mobile-nav__body">
             <ul class="mobile-nav-list">
@@ -970,6 +978,14 @@
             <use href="./img/icons/sprite.svg#svg-arrow-top"></use>
         </svg>
     </a>
+
+
+
+        <a href="tel:78000001122" class="btn-mobile" aria-label="Позвонить нам">
+            <svg class="svg-call">
+                <use href="./img/icons/sprite.svg#svg-call"></use>
+            </svg>
+        </a>
 
     <!-- vendor -->
     <script src="./libs/jquery/jquery-3.7.1.min.js"></script>
